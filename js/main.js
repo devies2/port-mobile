@@ -22,6 +22,13 @@
         $('#content').remove();
         $('#container').load(url +' #content');
     })
+    $('.gnb a').on('click', function(e){
+        e.preventDefault();
+        $('.gnb').removeClass('on');
+        url = this.href;
+        $('#content').remove();
+        $('#container').load(url +' #content');
+    })
     $('.hbr').on('click', function(){
         $('.gnb').addClass('on');
         console.log('여기')
