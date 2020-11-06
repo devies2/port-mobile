@@ -725,3 +725,85 @@ img {
     left: -5px;
     top: -0.5px;
 }
+
+/* 맛집 랭킹 */
+
+.rank-container {
+    background: rgb(218, 218, 218);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rank-container .rank-box {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 10px;
+    position: relative;
+}
+.rank-container .rank-inner {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.rank-box > span:first-child {
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    display: inline-block;
+    padding: 10px 12px;
+    color: #Fff;
+    border-radius: 50%;
+    background: rgb(255, 204, 116);
+}
+.rank-box p {
+    padding: 20px 10px;
+    background: rgb(248,242, 231);
+}
+
+.rank-box img {
+    width: 80%;
+}
+
+.rank-box .rank-text {
+    padding: 10px 20px;
+    /* background: red; */
+}
+
+.rank-box .rank-text {
+    text-align: left;
+}
+.rank-box .rank-text span:first-child {
+    font-weight: bold;
+}
+
+/* 요리법 별 식당 */
+
+.food-container {
+    background: rgb(218, 218, 218);
+    text-align: left;
+    padding: 1px 0;
+}
+
+.food-container .food-box {
+    width: 90%;
+    margin: 25px auto;
+    padding: 30px;
+    background: #fff;
+}
+
+.food-container .food-box .food-text div {
+    font-weight: bold;
+    padding: 13px 0 13px 5px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    font-size: 18px;
+}
+
+.food-container .food-box .food-text span {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 14px;    
+}
+.food-container .food-box .food-text span:first-of-type {
+    padding-top: 10px;
+}
