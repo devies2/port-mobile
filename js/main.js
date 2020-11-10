@@ -17,10 +17,12 @@
         $('#container').load(url + ' #content')
     })
     $('.quickMenu a').on('click', function(e){
+        $.getScript("js/qna.js");
         e.preventDefault();
         url = this.href;
         $('#content').remove();
         $('#container').load(url +' #content');
+        $('#header').addClass('on');
     })
     $('.gnb a').on('click', function(e){
         e.preventDefault();
@@ -28,6 +30,7 @@
         url = this.href;
         $('#content').remove();
         $('#container').load(url +' #content');
+        $('#header').addClass('on');
     })
     $('.hbr').on('click', function(){
         $('.gnb').addClass('on');
@@ -48,3 +51,6 @@
 
 
 })(jQuery)
+
+
+// JS
